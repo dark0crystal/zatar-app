@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
   return (
      
     <html lang="ar" dir="rtl">
+
       <body className={lalezarFont.className}>
+        <main className="h-[95vh]">
 
         {/* navbar */}
           <Navbar/>
@@ -30,9 +32,10 @@ export default function RootLayout({ children }) {
         
        
         {children}
-        
+        </main>
         <Footer/>
         </body>
+        
     </html>
     
   );
