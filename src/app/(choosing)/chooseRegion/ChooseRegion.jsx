@@ -15,7 +15,7 @@ const ChooseRegion = () => {
 
   return (
     <div className='flex justify-center items-center'>
-    <div className='text-2xl border w-11/12 h-[32rem] mt-16 shadow-lg px-4 bg-white border-1 rounded-3xl flex flex-col justify-center items-center'>
+    <div className='text-2xl border w-11/12 h-[32rem] mt-16 shadow-lg px-4 bg-white border-1 rounded-3xl flex flex-col justify-center items-center relative' >
       <form onSubmit={getRegion} className='w-10/12 m-4 mb-12'  >
         <label>
           <h1 className='mb-20'>أكتب إسم المنطقة:</h1>
@@ -25,7 +25,7 @@ const ChooseRegion = () => {
             placeholder='الخوض السادسة'
           />
         </label>
-        <button type='submit' disabled={isLoading}>
+        <button className='absolute right-16 bottom-16 lg:right-28' type='submit' disabled={isLoading}>
           {isLoading ? <span>...لحظات</span> : <span>التالي</span>}
         </button>
       </form>
