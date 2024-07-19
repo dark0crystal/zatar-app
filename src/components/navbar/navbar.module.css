@@ -1,0 +1,36 @@
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    
+}
+
+
+/* This is to add a custom font  */
+@font-face {
+    font-family: 'Nihaya';
+    src: url('/fonts/ALLEXP01Nihaya.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
+  /* adding font to logo only  */
+  .logo {
+    font-size: 50px;
+    font-family: 'Nihaya', sans-serif;
+    
+  }
+  .beta{
+    color: aliceblue;
+    letter-spacing: .5px;
+    /* #3E4B1E */
+    background-color: 	#00719c;
+    font-weight: 600;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 20px;
+  }

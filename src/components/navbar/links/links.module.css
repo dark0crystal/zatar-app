@@ -1,0 +1,24 @@
+.links{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.logout{
+    background-color:black ;
+    border-radius: 10px;
+    height: 40px;
+    width: 90px;
+    /* width: 80px;
+    height: 40px; */
+}
+.login{
+    
+        background-color:black ;
+        border-radius: 10px;
+        height: 40px;
+        width: 90px;
+}

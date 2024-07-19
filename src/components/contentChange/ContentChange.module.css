@@ -1,0 +1,28 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 45vh;
+    flex-direction: column;
+
+}
+
+/* .imgsContainer{
+    width: 100%;
+    margin-top: 2vw;
+    height: 42vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: aqua;
+
+} */
+/* .indexImg , .rugImg , .zatarImg ,.omaniImg {
+    
+    background-image: url(/public/indexImg.jpg);
+    width: 100px;
+    height: 100px;
+} */
