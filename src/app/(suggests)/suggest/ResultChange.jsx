@@ -5,7 +5,7 @@ import { ImCross } from "react-icons/im";
 import { Toaster, toast } from 'sonner'
 export default function ResultChange({ results }) {
     const getRandomIndex = () => Math.floor(Math.random() * results.length);
-
+    console.log(results)
     const [result, setResult] = useState(results[getRandomIndex()]);
     const [isAnimating, setIsAnimating] = useState(false);
     const ChangeResult = () => {
@@ -44,7 +44,7 @@ export default function ResultChange({ results }) {
                     />
                 ))}
             </div>
-            <a  target="_blank" href={`https://www.google.com/maps/place/?q=place_id:${result.place_id}`} className='absolute left-6 bottom-6'>
+            <a  target="_blank" href={`https://www.google.com/maps/search/${result.name}`} className='absolute left-6 bottom-6'>
             <img src="/google-maps.svg" alt="Google Maps" className="w-10 h-10 mt-2" />
             </a>
             <h1> {result.rating}</h1>
