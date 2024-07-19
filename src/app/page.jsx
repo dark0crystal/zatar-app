@@ -14,7 +14,9 @@ import SuggestButton from '../components/suggestButton/SuggestButton';
 export default function Home() {
  
   return(
+   
    <div>
+    
    <div className='indexContent'>
       <ContentChange/>
    </div>
