@@ -27,7 +27,7 @@ async function getData(searchParams) {
     }
 
     const { lat, lng } = locationData.results[0].geometry.location;
-    const radius = 4000;
+    const radius = 2000;
 
     const res = await fetch(
         `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat},${lng}&radius=${radius}&type=restaurant&keyword=${encodeURIComponent(foodType)}&key=${apiKey}`,
