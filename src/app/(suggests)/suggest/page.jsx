@@ -51,7 +51,7 @@ export default async function RestaurantsPage({ searchParams }) {
         console.log('Places API response:', data);
 
         if (!data.results || data.results.length === 0) {
-            return <p>No restaurants found for the given location and food type.</p>;
+            return <p>No restaurants found for the given location and food type. لا يوجد مطاعم في هذه المنطقة </p>;
         }
 
         return (
