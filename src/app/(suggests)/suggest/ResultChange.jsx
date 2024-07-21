@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ImCross } from "react-icons/im";
 import { Toaster, toast } from 'sonner'
-export default function ResultChange({ results }) {
+export default  function ResultChange({ results }) {
     const getRandomIndex = () => Math.floor(Math.random() * results.length);
     console.log(results)
     const [result, setResult] = useState(results[getRandomIndex()]);
@@ -21,7 +21,7 @@ export default function ResultChange({ results }) {
 
     const isOpen = result.opening_hours?.open_now;
     const openStatusClass = isOpen ? 'bg-green' : 'bg-red-500';
-
+    
     return (
         <motion.div 
             className='flex flex-col items-center border sm:w-[70%] md:w-[50%] rounded-3xl lg:w-[40%] h-[75vh] bg-white mt-4 relative'
@@ -34,6 +34,7 @@ export default function ResultChange({ results }) {
             </h1>
             <div className='overflow-hidden h-[70%] w-[90%]'>
                 {result.photos && result.photos.map((photo, photoIndex) => (
+                 
                     <img
                         key={photoIndex}
                         src={`https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photo.photo_reference}&key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}`}
@@ -41,7 +42,9 @@ export default function ResultChange({ results }) {
                         width="400"
                         height="300"
                         className="mt-2 aspect-square w-full rounded-2xl object-cover"
+                        
                     />
+                    
                 ))}
             </div>
             <a  target="_blank" href={`https://www.google.com/maps/search/${result.name}`} className='absolute left-6 bottom-6'>
