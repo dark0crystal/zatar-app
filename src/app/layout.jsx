@@ -17,7 +17,7 @@ export const metadata = {
   description: "موقع لإقتراح أماكن للأكل",
   keywords: "where to eat , where should i eat , إقترح لي ,وين آكل,zatar,زعتر, أماكن, أكل, عمان, تقييم",
   author: "Al-Mardas",
-  viewport: "width=device-width, initial-scale=1.0",
+ 
   charset: "UTF-8",
 };
 
@@ -29,8 +29,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
-        <meta name="viewport" content={metadata.viewport} />
+     
         <meta charSet={metadata.charset} />
+      
       </Head>
       <body className={lalezarFont.className}>
         <main className="h-[95vh]">
